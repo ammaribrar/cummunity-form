@@ -1,0 +1,21 @@
+{
+  "name": "AI Community Forum",
+  "short_name": "AI Forum",
+  "description": "A place to discuss AI, machine learning, and data science",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#4F46E5",
+  "icons": [
+    {
+      "src": "/logos/community-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
