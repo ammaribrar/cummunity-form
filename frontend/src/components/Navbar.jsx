@@ -171,21 +171,6 @@ const Navbar = () => {
             </ListItemButton>
           </ListItem>
         ))}
-        <ListItem disablePadding>
-          <ListItemButton
-            component={RouterLink}
-            to="/create-post"
-            onClick={handleDrawerToggle}
-            sx={{
-              color: 'primary.main',
-              '&:hover': {
-                backgroundColor: 'action.hover',
-              },
-            }}
-          >
-            <ListItemText primary="Post" primaryTypographyProps={{ fontWeight: 600 }} />
-          </ListItemButton>
-        </ListItem>
       </List>
       <Divider sx={{ mt: 'auto' }} />
       <Box sx={{ p: 2 }}>
@@ -283,29 +268,6 @@ const Navbar = () => {
                   />
                 </Search>
               </Box>
-
-              {/* Create Post Button - Only show when user is logged in */}
-              {currentUser && (
-                <Button
-                  component={RouterLink}
-                  to="/post/new"
-                  variant="contained"
-                  size="small"
-                  startIcon={<AddIcon />}
-                  sx={{
-                    ml: 2,
-                    textTransform: 'none',
-                    borderRadius: 2,
-                    fontWeight: 500,
-                    display: { xs: 'none', md: 'flex' },
-                    '&:hover': {
-                      transform: 'translateY(-1px)',
-                    },
-                  }}
-                >
-                  Create Post
-                </Button>
-              )}
 
               {/* Auth Buttons and Theme Toggle */}
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, ml: 2 }}>

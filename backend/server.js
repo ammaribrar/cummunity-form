@@ -177,7 +177,7 @@ app.use((err, req, res, next) => {
   // Send error response
   res.status(error.statusCode).json({
     success: false,
-    error: message,
+    error: error.message,
     stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
   });
 });
